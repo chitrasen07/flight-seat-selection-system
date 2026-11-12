@@ -98,11 +98,15 @@ export default function Seat({ seat, isSelected, isTaken, onSelect }) {
       </svg>
 
       <span
-        className="pointer-events-none absolute inset-x-0 top-[38%] flex flex-col items-center leading-none"
+        className="pointer-events-none absolute inset-x-0 top-[36%] flex flex-col items-center leading-none"
         style={{ color: palette.text }}
       >
-        <span className="text-[8px] font-extrabold tracking-tight sm:text-[8px]">{seat.id}</span>
-        <span className="mt-0.5 text-[7px] font-bold opacity-90">{priceText}</span>
+        <span className="text-[9px] font-extrabold tracking-tight drop-shadow-[0_0.5px_0_rgba(255,255,255,0.35)]">
+          {seat.id}
+        </span>
+        <span className="mt-0.5 text-[8px] font-bold tabular-nums opacity-95">
+          {priceText}
+        </span>
       </span>
     </button>
   )

@@ -18,24 +18,13 @@ export default function Header() {
           </div>
         </div>
 
-        <nav
-          className="hidden items-center gap-1 rounded-xl bg-navy-950/4 p-1 sm:flex"
-          aria-label="Booking steps"
+        <p
+          className="inline-flex items-center gap-2 rounded-xl border border-navy-900/8 bg-navy-950/4 px-3 py-1.5 text-xs font-semibold text-navy-900"
+          aria-current="step"
         >
-          <span className="inline-flex items-center gap-2 rounded-lg bg-white px-3 py-1.5 text-xs font-semibold text-navy-900 shadow-sm">
-            <Armchair className="h-3.5 w-3.5 text-royal-600" aria-hidden="true" />
-            Choose seats
-          </span>
-          <span className="rounded-lg px-3 py-1.5 text-xs font-medium text-navy-800/45">
-            Review
-          </span>
-          <span className="rounded-lg px-3 py-1.5 text-xs font-medium text-navy-800/45">
-            Confirm
-          </span>
-        </nav>
-
-        <p className="rounded-lg bg-royal-600/10 px-2.5 py-1 text-[11px] font-bold text-royal-700 sm:hidden">
-          Choose seats
+          <Armchair className="h-3.5 w-3.5 text-royal-600" aria-hidden="true" />
+          <span>Choose seats</span>
+          <span className="hidden font-medium text-navy-800/45 sm:inline">· Current step</span>
         </p>
       </div>
     </header>
